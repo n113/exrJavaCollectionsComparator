@@ -25,11 +25,11 @@ public class Main {
         arrS.add(s8);
 
         //Collections.sort(arrS, Students.COMPARE_BY_COUNTRY);
-        Collections.sort(arrS, Students.COMPARE_BY_AGE);
         //Collections.sort(arrS, Students.COMPARE_BY_AGE);
+        Collections.sort(arrS, Students.COMPARE_BY_NAME);
 
         for (int i = 0; i <arrS.size() ; i++) {
-            System.out.println(arrS.get(i).getAge());
+            System.out.println(arrS.get(i).getName()+", "+arrS.get(i).getAge());
         }
     }//main
 }//class
