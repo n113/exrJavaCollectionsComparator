@@ -3,6 +3,7 @@ package com.company;
 import java.util.Comparator;
 
 public class Students implements Comparable {
+    static int counter=0;
     private String name;
     private int age;
     private String sex;
@@ -37,6 +38,7 @@ public class Students implements Comparable {
 
 
     Students(String name, int age, String sex, String country) {
+        counter++;
         this.name = name;
         this.age = age;
         this.sex = sex;

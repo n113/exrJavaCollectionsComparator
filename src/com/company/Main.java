@@ -29,7 +29,8 @@ public class Main {
         Collections.sort(arrS, Students.COMPARE_BY_NAME);
 
         for (int i = 0; i <arrS.size() ; i++) {
-            System.out.println(arrS.get(i).getName()+", "+arrS.get(i).getAge());
+            System.out.println(arrS.get(i).getName()+", "+arrS.get(i).getAge() +", hash: "+ arrS.get(i).hashCode());
         }
+        System.out.println("Total amount of students: "+Students.counter);
     }//main
 }//class
